@@ -1,0 +1,89 @@
+main.pb-3 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.title-container {
+    background-color: #93C54B;
+    padding: 1rem;
+    text-align: center;
+}
+
+    .title-container h1 {
+        color: white;
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+.subtitle-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+    .subtitle-container h3 {
+        font-size: 0.65rem;
+        color: white;
+        margin: 0;
+    }
+
+.joke-container {
+    max-width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.joke-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.vote-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+header nav.navbar {
+    width: 100%; 
+    background-color: white; 
+    color: white; 
+}
+
+    header nav.navbar .navbar-brand,
+    header nav.navbar .nav-link {
+        color: white;
+    }
+
+footer.footer {
+    background-color: white; 
+    color: white; 
+    width: 100%; 
+    padding: 1rem 0;
+}
+
+    footer.footer .container {
+        width: 100%; 
+        text-align: center;
+    }

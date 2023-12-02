@@ -1,0 +1,29 @@
+﻿@model JokeMadeYourDay.WebApp.Models.Joke
+
+@{
+    ViewData["Title"] = "A joke a day keeps the doctor away";
+}
+    <div class="title-container">
+        <h1>@ViewData["Title"]</h1>
+        <div class="subtitle-container">
+            <h3>If you joke wrong way, your teeth have to pay. (Serious)</h3>
+        </div>
+    </div>
+
+    <div class="joke-container">
+    @if (Model != null)
+    {
+        <div class="joke-content">
+            <p>@Model.Content</p>
+            <form asp-action="Vote" method="post" class="vote-form">
+                <input type="hidden" name="jokeId" value="@Model.Id" />
+                <button type="submit" name="liked" value="true" class="btn btn-success">This is Funny!</button>
+                <button type="submit" name="liked" value="false" class="btn btn-danger" @(Model.Vote <= 0 ? "disabled" : "")>This is not funny.</button>
+            </form>
+        </div>
+    }
+    else
+    {
+        <p>Loading joke...</p>
+    }
+</div>
